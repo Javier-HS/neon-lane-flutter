@@ -1,0 +1,29 @@
+name: juego_app
+description: "Neon Lane Runner - Juego de 3 carriles con Sprites y Sonido"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Versiones actualizadas para evitar el error de UnmodifiableFloat64
+  flame: ^1.18.0
+  flame_audio: ^2.10.0
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Configuración de recursos
+  assets:
+    - assets/images/
+    - assets/audio/
